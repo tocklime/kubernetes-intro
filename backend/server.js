@@ -8,6 +8,7 @@ app.get('/', (request, response) => {
 	logger.info('Responded to GET request on /')
 });
 
+
 app.get('/api/me', (request, response) => {
 	response.send('{"name": "Arthur Dent", "location": "Earth"}');
 	logger.info('Responded to GET request on /api/me')
