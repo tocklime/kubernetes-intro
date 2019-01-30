@@ -1,7 +1,9 @@
 const express = require('express');
 const logger = require('winston');
+const healthz = require ('express-healthz');
 const app = express();
 const port = 5000;
+app.use(healthz);
 
 app.get('/', (request, response) => {
 	response.send(`Hello, I'm alive`);

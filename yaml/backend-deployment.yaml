@@ -17,5 +17,14 @@ spec:
       containers:
       - name: backend
         image: gcr.io/kubernetes-225414/backend:cv-backend-2
+        #livenessProbe:
+          #httpGet:
+          #  path: /healthz
+          #  port: 8080
+          #  httpHeaders:
+          #  - name: X-Custom-Header
+          #    value: Awesome
+          #initialDelaySeconds: 3
+          #periodSeconds: 3
         ports:
         - containerPort: 5000
