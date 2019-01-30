@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gcr.io/kubernetes-225414/backend:cv-backend-2
+        image: gcr.io/kubernetes-225414/backend:cv-backend-3
         #livenessProbe:
           #httpGet:
           #  path: /healthz
